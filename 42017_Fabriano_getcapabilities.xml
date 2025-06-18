@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WMS_Capabilities xmlns:sld="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" xsi:schemaLocation="http://www.opengis.net/wms http://schemas.opengis.net/wms/1.3.0/capabilities_1_3_0.xsd http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/sld_capabilities.xsd http://www.qgis.org/wms https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;REQUEST=GetSchemaExtension" xmlns:qgs="http://www.qgis.org/wms" xmlns="http://www.opengis.net/wms">
+ <Service>
+  <Name>WMS</Name>
+  <Title>Untitled</Title>
+  <KeywordList>
+   <Keyword vocabulary="ISO">infoMapAccessService</Keyword>
+  </KeywordList>
+  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/"/>
+  <Fees>conditions unknown</Fees>
+  <AccessConstraints>None</AccessConstraints>
+ </Service>
+ <Capability>
+  <Request>
+   <GetCapabilities>
+    <Format>text/xml</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?PROJECT=/projects/42017_Fabriano/42017_Fabriano.qgz"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+   </GetCapabilities>
+   <GetMap>
+    <Format>image/jpeg</Format>
+    <Format>image/png</Format>
+    <Format>image/png; mode=16bit</Format>
+    <Format>image/png; mode=8bit</Format>
+    <Format>image/png; mode=1bit</Format>
+    <Format>application/dxf</Format>
+    <Format>application/pdf</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?PROJECT=/projects/42017_Fabriano/42017_Fabriano.qgz"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+   </GetMap>
+   <GetFeatureInfo>
+    <Format>text/plain</Format>
+    <Format>text/html</Format>
+    <Format>text/xml</Format>
+    <Format>application/vnd.ogc.gml</Format>
+    <Format>application/vnd.ogc.gml/3.1.1</Format>
+    <Format>application/json</Format>
+    <Format>application/geo+json</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?PROJECT=/projects/42017_Fabriano/42017_Fabriano.qgz"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+   </GetFeatureInfo>
+   <sld:GetLegendGraphic>
+    <Format>image/jpeg</Format>
+    <Format>image/png</Format>
+    <Format>application/json</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?PROJECT=/projects/42017_Fabriano/42017_Fabriano.qgz"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+   </sld:GetLegendGraphic>
+   <sld:DescribeLayer>
+    <Format>text/xml</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?PROJECT=/projects/42017_Fabriano/42017_Fabriano.qgz"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+   </sld:DescribeLayer>
+   <qgs:GetStyles>
+    <Format>text/xml</Format>
+    <DCPType>
+     <HTTP>
+      <Get>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?PROJECT=/projects/42017_Fabriano/42017_Fabriano.qgz"/>
+      </Get>
+     </HTTP>
+    </DCPType>
+   </qgs:GetStyles>
+  </Request>
+  <Exception>
+   <Format>XML</Format>
+  </Exception>
+  <sld:UserDefinedSymbolization UserLayer="0" InlineFeature="0" UserStyle="1" SupportSLD="1" RemoteWFS="0" RemoteWCS="0"/>
+  <Layer queryable="1">
+   <Title>Untitled</Title>
+   <KeywordList>
+    <Keyword vocabulary="ISO">infoMapAccessService</Keyword>
+   </KeywordList>
+   <CRS>CRS:84</CRS>
+   <CRS>EPSG:4326</CRS>
+   <CRS>EPSG:3857</CRS>
+   <CRS>EPSG:32633</CRS>
+   <EX_GeographicBoundingBox>
+    <westBoundLongitude>5.130221</westBoundLongitude>
+    <eastBoundLongitude>19.905761</eastBoundLongitude>
+    <southBoundLatitude>0</southBoundLatitude>
+    <northBoundLatitude>47.608453</northBoundLatitude>
+   </EX_GeographicBoundingBox>
+   <BoundingBox minx="-247517" miny="0" maxx="869406" maxy="5272790" CRS="EPSG:32633"/>
+   <BoundingBox minx="571093.595" miny="0" maxx="2215899.148" maxy="6041957.606" CRS="EPSG:3857"/>
+   <BoundingBox minx="0" miny="5.130221" maxx="47.608453" maxy="19.905761" CRS="EPSG:4326"/>
+   <Layer queryable="1">
+    <Name>Indagini</Name>
+    <Title>Indagini</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:32633</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>12.795664</westBoundLongitude>
+     <eastBoundLongitude>13.05411</eastBoundLongitude>
+     <southBoundLatitude>43.227919</southBoundLatitude>
+     <northBoundLatitude>43.420045</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox minx="321541" miny="4788470" maxx="341991" maxy="4809312" CRS="EPSG:32633"/>
+    <BoundingBox minx="1424406.847" miny="5346728.168" maxx="1453176.79" maxy="5376126.957" CRS="EPSG:3857"/>
+    <BoundingBox minx="43.227919" miny="12.795664" maxx="43.420045" maxy="13.05411" CRS="EPSG:4326"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Indagini&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <Layer queryable="1">
+     <Name>Indagini_Ind_pu</Name>
+     <Title>Indagini_Ind_pu</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>12.795664</westBoundLongitude>
+      <eastBoundLongitude>13.05411</eastBoundLongitude>
+      <southBoundLatitude>43.227919</southBoundLatitude>
+      <northBoundLatitude>43.420045</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="321541" miny="4788470" maxx="341991" maxy="4809312" CRS="EPSG:32633"/>
+     <BoundingBox minx="1424406.847" miny="5346728.168" maxx="1453176.79" maxy="5376126.957" CRS="EPSG:3857"/>
+     <BoundingBox minx="43.227919" miny="12.795664" maxx="43.420045" maxy="13.05411" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Indagini_Ind_pu&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>Indagini_Ind_ln</Name>
+     <Title>Indagini_Ind_ln</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>12.824315</westBoundLongitude>
+      <eastBoundLongitude>12.95032</eastBoundLongitude>
+      <southBoundLatitude>43.312079</southBoundLatitude>
+      <northBoundLatitude>43.370271</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="323723" miny="4797766" maxx="333786" maxy="4803978" CRS="EPSG:32633"/>
+     <BoundingBox minx="1427596.298" miny="5359594.859" maxx="1441622.934" maxy="5368501.71" CRS="EPSG:3857"/>
+     <BoundingBox minx="43.312079" miny="12.824315" maxx="43.370271" maxy="12.95032" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Indagini_Ind_ln&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+   </Layer>
+   <Layer queryable="1">
+    <Name>CGT_MS</Name>
+    <Title>CGT_MS</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:32633</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>10.511363</westBoundLongitude>
+     <eastBoundLongitude>13.055707</eastBoundLongitude>
+     <southBoundLatitude>0</southBoundLatitude>
+     <northBoundLatitude>43.420825</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox minx="12" miny="0" maxx="342109.328" maxy="4809395.995" CRS="EPSG:32633"/>
+    <BoundingBox minx="1170119.646" miny="0" maxx="1453354.621" maxy="5376246.628" CRS="EPSG:3857"/>
+    <BoundingBox minx="0" miny="10.511363" maxx="43.420825" maxy="13.055707" CRS="EPSG:4326"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=CGT_MS&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <Layer queryable="1">
+     <Name>CGT_MS_Geoidr</Name>
+     <Title>CGT_MS_Geoidr</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>12.887393</westBoundLongitude>
+      <eastBoundLongitude>12.932824</eastBoundLongitude>
+      <southBoundLatitude>43.324034</southBoundLatitude>
+      <northBoundLatitude>43.354035</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="328792.318" miny="4798964.406" maxx="332396" maxy="4802208" CRS="EPSG:32633"/>
+     <BoundingBox minx="1434618.129" miny="5361423.941" maxx="1439675.32" maxy="5366015.635" CRS="EPSG:3857"/>
+     <BoundingBox minx="43.324034" miny="12.887393" maxx="43.354035" maxy="12.932824" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=CGT_MS_Geoidr&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>CGT_MS_Epuntuali</Name>
+     <Title>CGT_MS_Epuntuali</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>10.511363</westBoundLongitude>
+      <eastBoundLongitude>10.511418</eastBoundLongitude>
+      <southBoundLatitude>0</southBoundLatitude>
+      <northBoundLatitude>0.000758</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="12" miny="0" maxx="18" maxy="84" CRS="EPSG:32633"/>
+     <BoundingBox minx="1170119.646" miny="0" maxx="1170125.63" maxy="84.339" CRS="EPSG:3857"/>
+     <BoundingBox minx="0" miny="10.511363" maxx="0.000758" maxy="10.511418" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=CGT_MS_Epuntuali&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>CGT_MS_Elineari</Name>
+     <Title>CGT_MS_Elineari</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>12.88099</westBoundLongitude>
+      <eastBoundLongitude>12.937838</eastBoundLongitude>
+      <southBoundLatitude>43.320565</southBoundLatitude>
+      <northBoundLatitude>43.357622</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="328282.88" miny="4798591.819" maxx="332793.583" maxy="4802596.813" CRS="EPSG:32633"/>
+     <BoundingBox minx="1433905.267" miny="5360893.156" maxx="1440233.476" maxy="5366564.863" CRS="EPSG:3857"/>
+     <BoundingBox minx="43.320565" miny="12.88099" maxx="43.357622" maxy="12.937838" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=CGT_MS_Elineari&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>CGT_MS_Forme</Name>
+     <Title>CGT_MS_Forme</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>10.511363</westBoundLongitude>
+      <eastBoundLongitude>10.511418</eastBoundLongitude>
+      <southBoundLatitude>0</southBoundLatitude>
+      <northBoundLatitude>0.000758</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="12" miny="0" maxx="18" maxy="84" CRS="EPSG:32633"/>
+     <BoundingBox minx="1170119.646" miny="0" maxx="1170125.63" maxy="84.339" CRS="EPSG:3857"/>
+     <BoundingBox minx="0" miny="10.511363" maxx="0.000758" maxy="10.511418" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=CGT_MS_Forme&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>Instab_geotec</Name>
+     <Title>Instab_geotec</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>10.511363</westBoundLongitude>
+      <eastBoundLongitude>10.511418</eastBoundLongitude>
+      <southBoundLatitude>0</southBoundLatitude>
+      <northBoundLatitude>0.000758</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="12" miny="0" maxx="18" maxy="84" CRS="EPSG:32633"/>
+     <BoundingBox minx="1170119.646" miny="0" maxx="1170125.63" maxy="84.339" CRS="EPSG:3857"/>
+     <BoundingBox minx="0" miny="10.511363" maxx="0.000758" maxy="10.511418" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Instab_geotec&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>CGT_MS_Geotec</Name>
+     <Title>CGT_MS_Geotec</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>12.803774</westBoundLongitude>
+      <eastBoundLongitude>13.055707</eastBoundLongitude>
+      <southBoundLatitude>43.223639</southBoundLatitude>
+      <northBoundLatitude>43.420825</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="322200.279" miny="4787976.979" maxx="342109.328" maxy="4809395.995" CRS="EPSG:32633"/>
+     <BoundingBox minx="1425309.676" miny="5346074.201" maxx="1453354.621" maxy="5376246.628" CRS="EPSG:3857"/>
+     <BoundingBox minx="43.223639" miny="12.803774" maxx="43.420825" maxy="13.055707" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=CGT_MS_Geotec&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+   </Layer>
+   <Layer queryable="1">
+    <Name>MS1</Name>
+    <Title>MS1</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:32633</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>12.803773</westBoundLongitude>
+     <eastBoundLongitude>13.055707</eastBoundLongitude>
+     <southBoundLatitude>43.223639</southBoundLatitude>
+     <northBoundLatitude>43.420825</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox minx="322200.279" miny="4787976.979" maxx="342109.328" maxy="4809400.274" CRS="EPSG:32633"/>
+    <BoundingBox minx="1425309.521" miny="5346074.201" maxx="1453354.621" maxy="5376246.628" CRS="EPSG:3857"/>
+    <BoundingBox minx="43.223639" miny="12.803773" maxx="43.420825" maxy="13.055707" CRS="EPSG:4326"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=MS1&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <Layer queryable="1">
+     <Name>MS1_Instab</Name>
+     <Title>MS1_Instab</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>12.803773</westBoundLongitude>
+      <eastBoundLongitude>13.048711</eastBoundLongitude>
+      <southBoundLatitude>43.235524</southBoundLatitude>
+      <northBoundLatitude>43.42075</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="322200.279" miny="4789297.798" maxx="341571.688" maxy="4809400.274" CRS="EPSG:32633"/>
+     <BoundingBox minx="1425309.521" miny="5347890.006" maxx="1452575.808" maxy="5376235.142" CRS="EPSG:3857"/>
+     <BoundingBox minx="43.235524" miny="12.803773" maxx="43.42075" maxy="13.048711" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=MS1_Instab&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>MS1_Stab</Name>
+     <Title>MS1_Stab</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>12.803774</westBoundLongitude>
+      <eastBoundLongitude>13.055707</eastBoundLongitude>
+      <southBoundLatitude>43.223639</southBoundLatitude>
+      <northBoundLatitude>43.420825</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="322200.279" miny="4787976.979" maxx="342109.328" maxy="4809395.995" CRS="EPSG:32633"/>
+     <BoundingBox minx="1425309.676" miny="5346074.201" maxx="1453354.621" maxy="5376246.628" CRS="EPSG:3857"/>
+     <BoundingBox minx="43.223639" miny="12.803774" maxx="43.420825" maxy="13.055707" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=MS1_Stab&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+   </Layer>
+   <Layer queryable="1">
+    <Name>MS2</Name>
+    <Title>MS2</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:32633</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>12.875142</westBoundLongitude>
+     <eastBoundLongitude>12.933765</eastBoundLongitude>
+     <southBoundLatitude>43.320356</southBoundLatitude>
+     <northBoundLatitude>43.356958</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox minx="327806.996" miny="4798580.665" maxx="332462.853" maxy="4802531.274" CRS="EPSG:32633"/>
+    <BoundingBox minx="1433254.28" miny="5360861.153" maxx="1439780.082" maxy="5366463.286" CRS="EPSG:3857"/>
+    <BoundingBox minx="43.320356" miny="12.875142" maxx="43.356958" maxy="12.933765" CRS="EPSG:4326"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=MS2&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <Layer queryable="1">
+     <Name>MS2_Instab</Name>
+     <Title>MS2_Instab</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>12.896437</westBoundLongitude>
+      <eastBoundLongitude>12.911154</eastBoundLongitude>
+      <southBoundLatitude>43.324037</southBoundLatitude>
+      <northBoundLatitude>43.338057</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="329482.028" miny="4798947.354" maxx="330637.48" maxy="4800476.293" CRS="EPSG:32633"/>
+     <BoundingBox minx="1435624.831" miny="5361424.438" maxx="1437263.059" maxy="5363569.922" CRS="EPSG:3857"/>
+     <BoundingBox minx="43.324037" miny="12.896437" maxx="43.338057" maxy="12.911154" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=MS2_Instab&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>MS2_Stab</Name>
+     <Title>MS2_Stab</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>12.875142</westBoundLongitude>
+      <eastBoundLongitude>12.933765</eastBoundLongitude>
+      <southBoundLatitude>43.320356</southBoundLatitude>
+      <northBoundLatitude>43.356958</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="327806.996" miny="4798580.665" maxx="332462.853" maxy="4802531.274" CRS="EPSG:32633"/>
+     <BoundingBox minx="1433254.28" miny="5360861.153" maxx="1439780.082" maxy="5366463.286" CRS="EPSG:3857"/>
+     <BoundingBox minx="43.320356" miny="12.875142" maxx="43.356958" maxy="12.933765" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=MS2_Stab&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+   </Layer>
+   <Layer queryable="1">
+    <Name>MS3</Name>
+    <Title>MS3</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:32633</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>12.875142</westBoundLongitude>
+     <eastBoundLongitude>12.933765</eastBoundLongitude>
+     <southBoundLatitude>43.320356</southBoundLatitude>
+     <northBoundLatitude>43.356958</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox minx="327806.996" miny="4798580.665" maxx="332462.853" maxy="4802531.274" CRS="EPSG:32633"/>
+    <BoundingBox minx="1433254.28" miny="5360861.153" maxx="1439780.082" maxy="5366463.286" CRS="EPSG:3857"/>
+    <BoundingBox minx="43.320356" miny="12.875142" maxx="43.356958" maxy="12.933765" CRS="EPSG:4326"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=MS3&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <Layer queryable="1">
+     <Name>MS3_Instab</Name>
+     <Title>MS3_Instab</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>12.896437</westBoundLongitude>
+      <eastBoundLongitude>12.911154</eastBoundLongitude>
+      <southBoundLatitude>43.324037</southBoundLatitude>
+      <northBoundLatitude>43.338057</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="329482.028" miny="4798947.354" maxx="330637.48" maxy="4800476.293" CRS="EPSG:32633"/>
+     <BoundingBox minx="1435624.831" miny="5361424.438" maxx="1437263.059" maxy="5363569.922" CRS="EPSG:3857"/>
+     <BoundingBox minx="43.324037" miny="12.896437" maxx="43.338057" maxy="12.911154" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=MS3_Instab&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>MS3_Stab</Name>
+     <Title>MS3_Stab</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>12.875142</westBoundLongitude>
+      <eastBoundLongitude>12.933765</eastBoundLongitude>
+      <southBoundLatitude>43.320356</southBoundLatitude>
+      <northBoundLatitude>43.356958</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="327806.996" miny="4798580.665" maxx="332462.853" maxy="4802531.274" CRS="EPSG:32633"/>
+     <BoundingBox minx="1433254.28" miny="5360861.153" maxx="1439780.082" maxy="5366463.286" CRS="EPSG:3857"/>
+     <BoundingBox minx="43.320356" miny="12.875142" maxx="43.356958" maxy="12.933765" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=MS3_Stab&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+   </Layer>
+   <Layer queryable="1">
+    <Name>Base</Name>
+    <Title>Base</Title>
+    <CRS>CRS:84</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:32633</CRS>
+    <EX_GeographicBoundingBox>
+     <westBoundLongitude>5.130221</westBoundLongitude>
+     <eastBoundLongitude>19.905761</eastBoundLongitude>
+     <southBoundLatitude>34.797639</southBoundLatitude>
+     <northBoundLatitude>47.608453</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox minx="-247517" miny="3881110" maxx="869406" maxy="5272790" CRS="EPSG:32633"/>
+    <BoundingBox minx="571093.595" miny="4136415.074" maxx="2215899.148" maxy="6041957.606" CRS="EPSG:3857"/>
+    <BoundingBox minx="34.797639" miny="5.130221" maxx="47.608453" maxy="19.905761" CRS="EPSG:4326"/>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Base&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <Layer queryable="1">
+     <Name>Base_Comuni</Name>
+     <Title>Base_Comuni</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>12.531381</westBoundLongitude>
+      <eastBoundLongitude>13.87392</eastBoundLongitude>
+      <southBoundLatitude>42.30281</southBoundLatitude>
+      <northBoundLatitude>43.468524</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="300250.318" miny="4686241.833" maxx="407213.047" maxy="4813484.727" CRS="EPSG:32633"/>
+     <BoundingBox minx="1394987.009" miny="5206447.42" maxx="1544437.611" maxy="5383560" CRS="EPSG:3857"/>
+     <BoundingBox minx="42.30281" miny="12.531381" maxx="43.468524" maxy="13.87392" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Base_Comuni&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>Copertura regioni zona WGS84-UTM33/Copertura regioni zona WGS84-UTM32</Name>
+     <Title>Copertura regioni zona WGS84-UTM33/Copertura regioni zona WGS84-UTM32</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>5.130221</westBoundLongitude>
+      <eastBoundLongitude>19.905761</eastBoundLongitude>
+      <southBoundLatitude>34.797639</southBoundLatitude>
+      <northBoundLatitude>47.608453</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="-247517" miny="3881110" maxx="869406" maxy="5272790" CRS="EPSG:32633"/>
+     <BoundingBox minx="571093.595" miny="4136415.074" maxx="2215899.148" maxy="6041957.606" CRS="EPSG:3857"/>
+     <BoundingBox minx="34.797639" miny="5.130221" maxx="47.608453" maxy="19.905761" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Copertura regioni zona WGS84-UTM33/Copertura regioni zona WGS84-UTM32&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>Base_Com2014_WGS84_33N</Name>
+     <Title>Base_Com2014_WGS84_33N</Title>
+     <CRS>CRS:84</CRS>
+     <CRS>EPSG:4326</CRS>
+     <CRS>EPSG:3857</CRS>
+     <CRS>EPSG:32633</CRS>
+     <EX_GeographicBoundingBox>
+      <westBoundLongitude>11.71856</westBoundLongitude>
+      <eastBoundLongitude>14.753531</eastBoundLongitude>
+      <southBoundLatitude>41.64084</southBoundLatitude>
+      <northBoundLatitude>43.909058</northBoundLatitude>
+     </EX_GeographicBoundingBox>
+     <BoundingBox minx="236299.464" miny="4614744.314" maxx="479487.351" maxy="4861803.848" CRS="EPSG:32633"/>
+     <BoundingBox minx="1304504.179" miny="5107329.976" maxx="1642355.485" maxy="5451379.385" CRS="EPSG:3857"/>
+     <BoundingBox minx="41.64084" miny="11.71856" maxx="43.909058" maxy="14.753531" CRS="EPSG:4326"/>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Base_Com2014_WGS84_33N&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+   </Layer>
+   <Layer queryable="1">
+    <Name>Tabelle</Name>
+    <Title>Tabelle</Title>
+    <CRS>CRS:84</CRS>
+    <Style>
+     <Name>default</Name>
+     <Title>default</Title>
+     <LegendURL>
+      <Format>image/png</Format>
+      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Tabelle&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+     </LegendURL>
+    </Style>
+    <Layer queryable="1">
+     <Name>Tabelle_codici_Geotec_Gen</Name>
+     <Title>Tabelle_codici_Geotec_Gen</Title>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Tabelle_codici_Geotec_Gen&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>Tabelle_codici_Geotec_Stato</Name>
+     <Title>Tabelle_codici_Geotec_Stato</Title>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Tabelle_codici_Geotec_Stato&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>Tabelle_codici_Geotec_Tipo_gt</Name>
+     <Title>Tabelle_codici_Geotec_Tipo_gt</Title>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Tabelle_codici_Geotec_Tipo_gt&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>Tabelle_codici_Instab_Tipo_i</Name>
+     <Title>Tabelle_codici_Instab_Tipo_i</Title>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Tabelle_codici_Instab_Tipo_i&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>Tabelle_codici_Tipo_el</Name>
+     <Title>Tabelle_codici_Tipo_el</Title>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Tabelle_codici_Tipo_el&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>Tabelle_codici_Tipo_ep</Name>
+     <Title>Tabelle_codici_Tipo_ep</Title>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Tabelle_codici_Tipo_ep&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>Tabelle_codici_Tipo_f</Name>
+     <Title>Tabelle_codici_Tipo_f</Title>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Tabelle_codici_Tipo_f&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>Tabelle_codici_Tipo_gi</Name>
+     <Title>Tabelle_codici_Tipo_gi</Title>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Tabelle_codici_Tipo_gi&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+    <Layer queryable="1">
+     <Name>Tabelle_codici_Tipo_z</Name>
+     <Title>Tabelle_codici_Tipo_z</Title>
+     <Style>
+      <Name>default</Name>
+      <Title>default</Title>
+      <LegendURL>
+       <Format>image/png</Format>
+       <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://qgis.mgm-are-cra-prod.mindicity.it/qgis/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetLegendGraphic&amp;LAYER=Tabelle_codici_Tipo_z&amp;FORMAT=image/png&amp;STYLE=default&amp;SLD_VERSION=1.1.0"/>
+      </LegendURL>
+     </Style>
+    </Layer>
+   </Layer>
+  </Layer>
+ </Capability>
+</WMS_Capabilities>
